@@ -16,7 +16,7 @@ namespace StudentsAndMarks
         public EditStudent()
         {
             InitializeComponent();
-            binding.DataSource = MainForm.Studs;
+            binding.DataSource = MainForm.Studs[StudentsEditor.index];
             TB_Name.DataBindings.Add("Text", binding, "Name");
         }
     }

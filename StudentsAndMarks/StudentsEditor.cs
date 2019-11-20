@@ -13,6 +13,7 @@ namespace StudentsAndMarks
     public partial class StudentsEditor : Form
     {
         private BindingSource binding = new BindingSource();
+        public static int index = 0;
         public StudentsEditor()
         {
             InitializeComponent();
@@ -21,11 +22,13 @@ namespace StudentsAndMarks
 
         }
 
-        private void LB_Students_DoubleClick(object sender, EventArgs e)
+        private void LB_Students_DoubleClick(object sender, EventArgs e)SS
         {
             if (LB_Students.SelectedIndex != -1)
             {
+                index = LB_Students.SelectedIndex;
                 EditStudent EdStud = new EditStudent();
+                
 
                 switch (EdStud.ShowDialog(this))
                 {
