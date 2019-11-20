@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace StudentsAndMarks
 {
-    class Subject
+    public class Subject
     {
         private string _Name;
 

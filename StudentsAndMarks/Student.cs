@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace StudentsAndMarks
 {
-    class Student
+    public class Student
     {
         private string _Name;
 
@@ -25,5 +25,7 @@ namespace StudentsAndMarks
                 _Name = value;
             }
         }
+
+        public Student() { }
     }
 }
