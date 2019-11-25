@@ -7,9 +7,12 @@ using System.Windows.Forms;
 
 namespace StudentsAndMarks
 {
+    [Serializable]
     public class Subject
     {
+        private static int count = 0;
         private string _Name;
+        public int id { get; set; }
 
         public string Name
         {
@@ -19,11 +22,22 @@ namespace StudentsAndMarks
                 if (String.IsNullOrWhiteSpace(value))
                 {
                     MessageBox.Show("Name can't be empty or contain white spaces", "Warning");
-                    return;
+                    throw new Exception("IanappropriateName");
                 }
 
                 _Name = value;
             }
+        }
+
+        public Subject()
+        {
+            id = count;
+            count += 1;
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

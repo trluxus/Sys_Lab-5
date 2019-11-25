@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace StudentsAndMarks
 {
-    public partial class EditStudent : Form
+    public partial class EditItem : Form
     {
         private BindingSource binding = new BindingSource();
-        public EditStudent()
+        public EditItem()
         {
             InitializeComponent();
-            binding.DataSource = MainForm.Studs[StudentsEditor.index];
+            if(JournalForm.Field==0)
+                binding.DataSource = MainForm.Studs[JournalForm.StudIndex];
+            else
+                binding.DataSource = MainForm.Subjects[JournalForm.SubIndex];
+
             TB_Name.DataBindings.Add("Text", binding, "Name");
         }
     }

@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EditStudent.cs">
+    <Compile Include="EditItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditStudent.Designer.cs">
-      <DependentUpon>EditStudent.cs</DependentUpon>
+    <Compile Include="EditItem.Designer.cs">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JournalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JournalForm.Designer.cs">
+      <DependentUpon>JournalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -58,18 +64,22 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Note.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="StudentsEditor.cs">
+    <Compile Include="RequestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentsEditor.Designer.cs">
-      <DependentUpon>StudentsEditor.cs</DependentUpon>
+    <Compile Include="RequestForm.Designer.cs">
+      <DependentUpon>RequestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student.cs" />
     <Compile Include="Subject.cs" />
-    <EmbeddedResource Include="EditStudent.resx">
-      <DependentUpon>EditStudent.cs</DependentUpon>
+    <EmbeddedResource Include="EditItem.resx">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JournalForm.resx">
+      <DependentUpon>JournalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -83,8 +93,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="StudentsEditor.resx">
-      <DependentUpon>StudentsEditor.cs</DependentUpon>
+    <EmbeddedResource Include="RequestForm.resx">
+      <DependentUpon>RequestForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace StudentsAndMarks
 {
-    partial class EditStudent
+    partial class EditItem
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,8 @@
             this.B_OK = new System.Windows.Forms.Button();
             this.B_Cancel = new System.Windows.Forms.Button();
             this.B_Delete = new System.Windows.Forms.Button();
+            this.lProposeName = new System.Windows.Forms.Label();
+            this.tbProposeName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // L_Name
@@ -46,9 +48,10 @@
             // 
             // TB_Name
             // 
-            this.TB_Name.Location = new System.Drawing.Point(79, 11);
+            this.TB_Name.Location = new System.Drawing.Point(96, 11);
             this.TB_Name.Name = "TB_Name";
-            this.TB_Name.Size = new System.Drawing.Size(206, 20);
+            this.TB_Name.ReadOnly = true;
+            this.TB_Name.Size = new System.Drawing.Size(189, 20);
             this.TB_Name.TabIndex = 1;
             // 
             // B_OK
@@ -81,17 +84,37 @@
             this.B_Delete.Text = "Delete";
             this.B_Delete.UseVisualStyleBackColor = true;
             // 
-            // EditStudent
+            // lProposeName
+            // 
+            this.lProposeName.AutoSize = true;
+            this.lProposeName.Location = new System.Drawing.Point(14, 38);
+            this.lProposeName.Name = "lProposeName";
+            this.lProposeName.Size = new System.Drawing.Size(77, 13);
+            this.lProposeName.TabIndex = 5;
+            this.lProposeName.Text = "Propose Name";
+            // 
+            // tbProposeName
+            // 
+            this.tbProposeName.Location = new System.Drawing.Point(95, 35);
+            this.tbProposeName.Name = "tbProposeName";
+            this.tbProposeName.Size = new System.Drawing.Size(189, 20);
+            this.tbProposeName.TabIndex = 6;
+            // 
+            // EditItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(296, 147);
+            this.Controls.Add(this.tbProposeName);
+            this.Controls.Add(this.lProposeName);
             this.Controls.Add(this.B_Delete);
             this.Controls.Add(this.B_Cancel);
             this.Controls.Add(this.B_OK);
             this.Controls.Add(this.TB_Name);
             this.Controls.Add(this.L_Name);
-            this.Name = "EditStudent";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "EditItem";
             this.Text = "EditStudent";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -105,5 +128,7 @@
         private System.Windows.Forms.Button B_Cancel;
         private System.Windows.Forms.Button B_Delete;
         public System.Windows.Forms.TextBox TB_Name;
+        private System.Windows.Forms.Label lProposeName;
+        public System.Windows.Forms.TextBox tbProposeName;
     }
 }
