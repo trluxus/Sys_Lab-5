@@ -52,6 +52,7 @@ namespace StudentsAndMarks
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             XmlSerializer formatStudent = new XmlSerializer(typeof(List<Student>));
             XmlSerializer formatSubject = new XmlSerializer(typeof(List<Subject>));
             XmlSerializer formatNote     = new XmlSerializer(typeof(List<Note>));

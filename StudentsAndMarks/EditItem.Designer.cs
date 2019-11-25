@@ -112,6 +112,7 @@
             this.Controls.Add(this.B_OK);
             this.Controls.Add(this.TB_Name);
             this.Controls.Add(this.L_Name);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EditItem";

@@ -167,7 +167,12 @@ namespace StudentsAndMarks
                     MessageBox.Show("You must input value for Mark", "Warning");
                     return;
                 }
-                
+
+                if (tmp < 0)
+                {
+                    MessageBox.Show("You must input value more then zero for Mark", "Warning");
+                    return;
+                }
 
                 if (MainForm.Notes.Exists(x => x.stdt.id == note.stdt.id && x.sub.id == note.sub.id))
                 {
