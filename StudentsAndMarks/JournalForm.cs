@@ -165,12 +165,14 @@ namespace StudentsAndMarks
                 else
                 {
                     MessageBox.Show("You must input value for Mark", "Warning");
+                    TB_Mark.Text = null;
                     return;
                 }
 
                 if (tmp < 0)
                 {
                     MessageBox.Show("You must input value more then zero for Mark", "Warning");
+                    TB_Mark.Text = null;
                     return;
                 }
 
